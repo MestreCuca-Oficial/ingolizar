@@ -1,0 +1,141 @@
+/* Estilo global para o corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #2e2e2e, #555555); /* Gradiente de fundo suave */
+    color: white;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar o cabeçalho */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4.5em;
+    color: #000000;
+    font-size: 2em;
+    position: relative;
+    animation: pulse 2.8s infinite;
+}
+@keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        85% { transform: scale(1.18); }
+        
+}    
+header p {
+    font-size: 1.1em;
+    color: #000000;
+    margin-top: 10px;
+}
+#logo {
+    width: 200px; /* ajuste conforme o tamanho do seu logo */
+    height: auto;
+    font-size: 4.5em;
+    margin: 0;
+}
+#botão{
+        background-color: #999999;
+        color: #666666;
+        cursor:help;
+        transition: background-color 1s;
+        border: 2px;
+        margin: 20px 40px;
+        padding:10px 20px;
+        border-radius: 500px;
+        color:rgb(0, 0, 0);
+        font-weight: 700;
+
+}
+/* Navegação com links */
+nav {
+    background-color: #444444;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para o menu */
+}
+
+nav a {
+    color: #bbbbbb;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease; /* Efeito de transição suave */
+}
+
+nav a:hover {
+    color: #ffffff;
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+}
+
+/* Seção principal */
+section {
+    padding: 30px;
+    background-color: #666666;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a seção */
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Estilo do conteúdo dentro da seção */
+.content {
+    background-color: #999999;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Efeito de sombra para destacar o conteúdo */
+    transition: background-color 0.4s ease; 
+    color: #000000;
+}
+
+.content:hover {
+    background-color: #000000; /* Mudança de cor no hover para criar interação */
+    color: #ffffff;
+    box-shadow: 0 2px 9px rgb(250, 0, 0);
+    border-radius: 10px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #222222;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #bbbbbb;
+    font-size: 1.1em;
+    border-top: 2px solid #000000; /* Linha suave no topo do rodapé */
+}
+
+/* Ajustes de responsividade (para telas menores) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+    }
+    
+    section h2 {
+        font-size: 2em;
+    }
+}
+   
+    
